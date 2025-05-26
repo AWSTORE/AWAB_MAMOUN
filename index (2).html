@@ -1,0 +1,178 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AWAB DESIGN | طلب تصميم</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+  }
+  body, html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    background: linear-gradient(-45deg, #00c6ff, #0072ff, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    padding: 20px;
+  }
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.75);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 35px;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 14px 15px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: none;
+    background: #121212cc;
+    color: #eee;
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    background: #1f1f1f;
+    box-shadow: 0 0 8px #00ffff;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #bbb;
+  }
+  button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    background: #00ffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffff;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  button:hover {
+    background: #00d5d5;
+    box-shadow: 0 0 25px #00d5d5;
+  }
+  /* تنقل ثابت في الأعلى */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.85);
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #00d5d5;
+  }
+  /* تعويض الهامش العلوي بسبب الناف */
+  .container {
+    margin-top: 100px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#order">طلب تصميم</a>
+  <a href="#contact">تواصل معنا</a>
+</nav>
+
+<div class="container" id="order">
+  <h1>طلب تصميم</h1>
+  <form action="https://formsubmit.co/awstore228@gmail.com" method="POST">
+    <label for="name">اسمك الكامل</label>
+    <input type="text" id="name" name="name" placeholder="مثلاً: أواب" required />
+
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+    <label for="whatsapp">رقم الواتساب (مع رمز الدولة)</label>
+    <input type="text" id="whatsapp" name="whatsapp" placeholder="مثلاً 966123456789" required />
+
+    <label for="service">نوع التصميم</label>
+    <select id="service" name="service" required>
+      <option value="">اختر الخدمة</option>
+      <option value="بوستر رياضي">بوستر رياضي</option>
+      <option value="بوستر محل">بوستر محل</option>
+      <option value="إعلان تجاري">إعلان تجاري</option>
+      <option value="بوستر فعالية">بوستر فعالية</option>
+      <option value="تصميم اجتماعي">تصميم اجتماعي</option>
+      <option value="غير ذلك">غير ذلك</option>
+    </select>
+
+    <label for="details">تفاصيل التصميم</label>
+    <textarea id="details" name="details" rows="5" placeholder="أدخل التفاصيل المطلوبة هنا" required></textarea>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</div>
+
+<div class="container" id="contact" style="margin-bottom: 60px;">
+  <h1>تواصل معنا</h1>
+  <p style="text-align:center; font-size:1.2rem; line-height:1.5;">
+    للإستفسار أو الدعم تواصل معنا عبر الواتساب: <br />
+    <a href="https://wa.me/966569301988" target="_blank" style="color:#00ffff; font-weight:bold;">+966569301988</a><br /><br />
+    أو راسلنا عبر البريد الإلكتروني: <br />
+    <a href="mailto:awstore228@gmail.com" style="color:#00ffff; font-weight:bold;">awstore228@gmail.com</a>
+  </p>
+</div>
+
+</body>
+</html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>
